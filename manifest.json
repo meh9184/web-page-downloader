@@ -1,0 +1,32 @@
+{
+  "name": "Page Downloader",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "background": {
+    "scripts": ["module/jquery-3.2.0.min.js", "module/jquery.cookie.js", "background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icons/mht_icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "declarativeContent",
+    "pageCapture",
+    "tabs",
+    "storage",
+    "downloads",
+    "alarms",
+    "http://developer.chrome.com/*",
+    "http://*/*",
+    "https://*/*",
+    "<all_urls>",
+    "*://*/*"
+  ],
+  "icons": {
+    "64": "icons/mht_icon.png"
+  },
+  "manifest_version": 2
+}
